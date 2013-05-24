@@ -43,14 +43,13 @@ end
 
 
 
-
 deck = Deck.new
 
-
-parser = Parser.new(filename: 'flashcard_samples.txt', contents_class: Card, 
-                    container: deck)
-
-parser.populate_container!
+ARGV.each do |filename|
+  parser = Parser.new(filename: filename, contents_class: Card, 
+                      container: deck)
+  parser.populate_container!
+end
 deck.shuffle!
 UserInterface.run(deck)
 
