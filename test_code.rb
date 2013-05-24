@@ -13,6 +13,8 @@ p card1.match?("Array.new") == true
 p card1.match?("array.New") == true
 p card1.match?("foobar") == false
 
+# Test Deck class
+
 deck1 = Deck.new
 p deck1.cards == []
 p deck1.empty? == true
@@ -22,5 +24,12 @@ p deck1.empty? == false
 p deck1.insert!(card2) == [card1, card2]
 p deck1.cards == [card1, card2]
 p deck1.next  == card2
+#add shuffle! tests
 
+# Test Parser class
+deck = Deck.new
 
+parser = Parser.new(filename: 'flashcard_samples.txt', contents_class: Card, 
+                    container: deck)
+
+parser.populate_container!
