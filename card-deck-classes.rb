@@ -1,5 +1,5 @@
 class Card
-  attr_reader :definition
+  attr_reader :definition, :term
 
   def initialize(arg)
     @definition = arg[:definition]
@@ -23,8 +23,8 @@ class Deck
     @cards = []
   end
 
-  def shuffle!
-    @cards.shuffle!
+  def shuffle!(png = Random.new) 
+    @cards.shuffle!(random: png)
   end
 
   def next

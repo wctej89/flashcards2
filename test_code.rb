@@ -25,11 +25,6 @@ p deck1.insert!(card2) == [card1, card2]
 p deck1.cards == [card1, card2]
 p deck1.next  == card2
 #add shuffle! tests
-
-# Test Parser class
-deck = Deck.new
-
-parser = Parser.new(filename: 'flashcard_samples.txt', contents_class: Card, 
-                    container: deck)
-
-parser.populate_container!
+deck1.insert!(card2)
+prng = Random.new(1234)  # seed RNG for testing
+p deck1.shuffle!(prng) == [card2, card1]
