@@ -1,6 +1,8 @@
+#Code written by Matt Barackman, T.J. Singh, Lloyd Taylor and William Bendix
+
+
 require_relative 'card-deck-classes'
 require_relative 'flashcards_parser'
-
 
 
 class UserInterface

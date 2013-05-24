@@ -1,3 +1,5 @@
+#Code written by Matt Barackman, T.J. Singh, Lloyd Taylor and William Bendix
+
 require_relative 'card-deck-classes'
 
 class Parser

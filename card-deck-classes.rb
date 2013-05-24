@@ -1,3 +1,5 @@
+#Code written by Matt Barackman, T.J. Singh, Lloyd Taylor and William Bendix
+
 class Card
   attr_reader :definition, :term
 
