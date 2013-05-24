@@ -7,7 +7,7 @@ class Card
   end
 
   def match?(guess)
-    guess == @term
+    guess.downcase == @term.downcase
   end
 
   def to_s
