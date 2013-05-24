@@ -8,7 +8,7 @@ card1 = Card.new(definition: "Command to instantiate a new object of class Array
 
 p card1
 p card1.definition
-p card1.term
+# p card1.term => should throw an error
 p card1.match?("Array.new")
 p card1.match?("foobar")
 

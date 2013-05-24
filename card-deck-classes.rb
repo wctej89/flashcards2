@@ -1,13 +1,13 @@
 class Card
   attr_reader :definition
 
-  def intialize(arg)
+  def initialize(arg)
     @definition = arg[:definition]
     @term = arg[:term]
   end
 
   def match?(guess)
-    guess == self.term
+    guess == @term
   end
 
 end
