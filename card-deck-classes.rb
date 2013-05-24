@@ -34,4 +34,8 @@ class Deck
   def empty?
     @cards.length == 0
   end
+
+  def insert!(card)
+    @cards << card
+  end
 end

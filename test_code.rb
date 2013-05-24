@@ -12,4 +12,5 @@ p card1.definition == "Command to instantiate a new object of class Array"
 p card1.match?("Array.new") == true
 p card1.match?("foobar") == false
 
-
+deck1 = Deck.new
+p deck1.cards == 
