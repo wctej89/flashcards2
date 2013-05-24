@@ -15,9 +15,12 @@ p card1.match?("foobar") == false
 
 deck1 = Deck.new
 p deck1.cards == []
+p deck1.empty? == true
 p deck1.insert!(card1) == [card1]
-p deck1.cards == [card1]
+p deck1.cards  == [card1]
+p deck1.empty? == false
 p deck1.insert!(card2) == [card1, card2]
 p deck1.cards == [card1, card2]
+p deck1.next  == card2
 
 
