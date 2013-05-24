@@ -10,6 +10,10 @@ class Card
     guess == @term
   end
 
+  def to_s
+    "#{@definition}"
+  end
+
 end
 
 class Deck
